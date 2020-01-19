@@ -1,0 +1,55 @@
+perl6 -n -e 'print $_.substr(0.1)' < letters.txt 
+ABCDEFGHIJKLMNOPQRSTUVXWYZabcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e 'print $_.substr(0,1)' < letters.txt 
+Aa
+
+$ perl6 -n -e 'print $_.substr(0.1)' < letters.txt 
+ABCDEFGHIJKLMNOPQRSTUVXWYZabcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e'print $_.substr(0, 1)' < letters.txt 
+Aa
+
+$ perl6 -n -e'print $_.substr(1,2)' < letters.txt 
+BCbc
+
+$ perl6 -n -e'print $_.substr(1,1)' < letters.txt 
+Bb
+
+$ perl6 -n -e'print $_.substr(1,3)' < letters.txt 
+BCDbcd
+
+$ perl6 -n -e'print $_.substr(1.3)' < letters.txt 
+BCDEFGHIJKLMNOPQRSTUVXWYZbcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e'print $_.substr(2.3)' < letters.txt 
+CDEFGHIJKLMNOPQRSTUVXWYZcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e'print $_.substr(2.1)' < letters.txt 
+CDEFGHIJKLMNOPQRSTUVXWYZcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e'print $_.substr(2.10)' < letters.txt 
+CDEFGHIJKLMNOPQRSTUVXWYZcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e'print $_.substr(2.2)' < letters.txt 
+CDEFGHIJKLMNOPQRSTUVXWYZcdefghijklmnopqrstuvxwyz
+
+$ perl6 -n -e'print $_.substr(2.3)' < letters.txt 
+CDEFGHIJKLMNOPQRSTUVXWYZcdefghijklmnopqrstuvxwyz
+
+
+
+
+
+
+
+perl6 --stagestats -n -e 'print $_.substr(0, 1)' < letters.txt 
+Stage start      :   0.000
+Stage parse      :   0.083
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.000
+Stage moar       :   0.000
+
