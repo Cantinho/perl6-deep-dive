@@ -1,0 +1,16 @@
+{
+  "name": "perl6-deep-dive",
+  "description": "Write me!",
+  "version": "0.1",
+  "perl": "6.*",
+  "auth": "Write me!",
+  "depends": [],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "perl6-deep-dive": "lib/perl6-deep-dive.pm6"
+  },
+  "resources": [],
+  "license": "Write me!",
+  "source-url": "Write me!"
+}
