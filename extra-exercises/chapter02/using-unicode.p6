@@ -36,3 +36,10 @@ say "e ASCII equivalent e (2.71828...)";
 say "τ ASCII equivalent tau that is 2π (6.283185...)";
 say "∞ ASCII equivalent Inf - Infinity is always bigger than any number";
 
+#say "It too hot outside" if $temperature ≠ 30;
+
+say 10 − 5; # Unicode MINUS SIGN
+
+#my $x = 10 > 2 ⁇ 'yes' ‼ 'no';
+#say $x;
+say 'ok' if 100000000 < ∞;
